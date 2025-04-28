@@ -1,14 +1,16 @@
 {
   "name": "@agrodt/three-soil-volume-shader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Three.js shader for rendering soil volumetric data (CT scan results).",
   "author": "Petr Tsymbarovich <petr@tsymbarovich.ru>",
   "contributors": [
     "Timofey Smirny <tsmirny@yandex.ru>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/AgroDT/three-soil-volume-shader",
-  "repository": "https://github.com/AgroDT/three-soil-volume-shader",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AgroDT/three-soil-volume-shader.git"
+  },
   "bugs": {
     "url": "https://github.com/AgroDT/three-soil-volume-shader/issues"
   },
