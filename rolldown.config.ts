@@ -1,11 +1,14 @@
-import type { RolldownOptions } from 'rolldown';
+import type {RolldownOptions} from 'rolldown';
+import {dts} from 'rolldown-plugin-dts';
 
 export default {
-  input: 'src/index.ts',
+  input: {
+    'agrodt-three-soil-volume-shader.min': 'src/index.ts',
+  },
   external: ['three/webgpu', 'three/tsl'],
+  plugins: [dts()],
   output: {
     format: 'esm',
-    file: 'dist/agrodt-three-soil-volume-shader.min.mjs',
     sourcemap: true,
     minify: true,
   },

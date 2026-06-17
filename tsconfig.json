@@ -8,11 +8,10 @@
 
     /* Bundler mode */
     "moduleResolution": "bundler",
+    "noEmit": true,
     "isolatedModules": true,
     "moduleDetection": "force",
     "declaration": true,
-    "emitDeclarationOnly": true,
-    "declarationDir": "dist",
     "declarationMap": true,
 
     /* Linting */
@@ -21,6 +20,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
+    "isolatedDeclarations": true,
   },
   "include": ["src"],
 }

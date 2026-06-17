@@ -21,8 +21,8 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/agrodt-three-soil-volume-shader.min.mjs",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/agrodt-three-soil-volume-shader.min.js",
+      "types": "./dist/agrodt-three-soil-volume-shader.d.ts"
     }
   },
   "scripts": {
@@ -31,8 +31,9 @@
   "packageManager": "pnpm@11.7.0+sha512.19cc852c120c7125760f2443ee6be0ca5b40f9f50598de1a09a1f177503e010e57c23c77646e01e761de59bf874fb22a3398c33ab9691fc13eb946b6f0f4d620",
   "devDependencies": {
     "@types/three": "0.184.1",
-    "rolldown": "^1.1.1",
-    "typescript": "^6.0.3"
+    "rolldown": "1.1.1",
+    "rolldown-plugin-dts": "0.25.2",
+    "typescript": "6.0.3"
   },
   "peerDependencies": {
     "three": ">=0.184.0"
