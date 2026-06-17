@@ -28,7 +28,7 @@
   "scripts": {
     "prepare": "tsc && rolldown -c"
   },
-  "packageManager": "pnpm@10.34.3+sha512.f2c531b08829d7be7f03c90addc266615f9c5477463e4bf1d275cb263ce9ea57cf0d5599110d94649a9bb3fed9f0b5efcea74a7016b61532a24cb9ad87860c1d",
+  "packageManager": "pnpm@11.7.0+sha512.19cc852c120c7125760f2443ee6be0ca5b40f9f50598de1a09a1f177503e010e57c23c77646e01e761de59bf874fb22a3398c33ab9691fc13eb946b6f0f4d620",
   "devDependencies": {
     "@types/three": "0.184.1",
     "rolldown": "^1.1.1",
