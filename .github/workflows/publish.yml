@@ -23,9 +23,6 @@ jobs:
 
       - name: Setup PNPM
         uses: pnpm/action-setup@v4
-          
-      - name: Generate pnpm-lock if missing
-        run: test -f pnpm-lock.yaml || pnpm install --lockfile-only
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
