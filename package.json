@@ -1,6 +1,6 @@
 {
   "name": "@agrodt/three-soil-volume-shader",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "A Three.js shader for rendering soil volumetric data (CT scan results).",
   "author": "Petr Tsymbarovich <petr@tsymbarovich.ru>",
   "contributors": [
