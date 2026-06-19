@@ -484,9 +484,13 @@ const createFragmentNode = Fn<FragmentNodeFnArgs, THREE.Node>(({
             normal.mulAssign(-1);
           });
 
-          // Palette mapping: use the granulometric value as a horizontal coordinate
-          // in the user-provided palette texture.
-          const paletteValue = clamp(refinedValue, 0, 1).toVar('paletteValue');
+          // Palette mapping: use the strongest value around the accepted surface
+          // point so outer boundary samples do not fall back to the red palette start.
+          const neighborhoodValue = max(
+            max(max(refinedValue, dx0), max(dx1, dy0)),
+            max(max(dy1, dz0), dz1),
+          ).toVar('neighborhoodValue');
+          const paletteValue = clamp(neighborhoodValue, 0, 1).toVar('paletteValue');
           const color = texture(palette, vec2(paletteValue, 0.5)).toVar('color');
 
           // Lighting: apply simple view-dependent diffuse shading to make local
